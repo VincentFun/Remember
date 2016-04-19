@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.meihui.remember.TransFragment">
+
+    <EditText
+        android:id="@+id/trans_input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:lines="6"
+        android:gravity="top"
+        android:hint="请输入要翻译的文本"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:background="@drawable/border_textview"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="翻译"
+        android:id="@+id/trans_go"/>
+    <TextView
+        android:id="@+id/trans_output"
+        android:layout_width="match_parent"
+        android:lines="6"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:layout_weight="1"
+        android:background="@drawable/border_textview"
+        />
+</LinearLayout>
